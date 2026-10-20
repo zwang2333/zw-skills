@@ -1,0 +1,3426 @@
+{
+  "schema_version": 1,
+  "title": "zw-skills",
+  "scanned_at": "2026-10-19T20:28:26-04:00",
+  "timezone": "America/New_York",
+  "scope": "Personal skill packages only; built-in, plugin-provided, broken, and unfinished template entries are excluded. No new installation scan was performed for this filtering update.",
+  "counts": {
+    "discovered_manifests": 37,
+    "catalog_entries": 37,
+    "by_status": {
+      "installed_manifest": 37
+    }
+  },
+  "status_definitions": {
+    "installed_manifest": "Manifest present in a personal skills directory; execution not tested."
+  },
+  "scan_roots": [
+    {
+      "path": "~/.codex/skills",
+      "exists": true,
+      "manifest_count": 37,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.agents/skills",
+      "exists": true,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.claude/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.cursor/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.cursor/skills-cursor",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.config/opencode/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.config/opencode/skill",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.opencode/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.gemini/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.gemini/antigravity/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.copilot/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.codeium/windsurf/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    },
+    {
+      "path": "~/.config/agents/skills",
+      "exists": false,
+      "manifest_count": 0,
+      "count_scope": "Retained personal skill manifests only."
+    }
+  ],
+  "configuration_review": {
+    "additional_skill_paths": "No additional explicit skill directory paths found in inspected Codex and Claude settings.",
+    "claude": "No user skills directory found in the original scan.",
+    "github_copilot": "Configuration directory detected; no SKILL.md manifests found.",
+    "excluded": [
+      "Built-in and plugin-provided skills, broken installations, and unfinished templates.",
+      "Upstream catalog checkouts and runtime/profile state.",
+      "Project repositories, backups, sessions, browser state, and unrelated home directories."
+    ]
+  },
+  "parse_warnings": [],
+  "skills": [
+    {
+      "id": "personal--convert-documents-to-markdown",
+      "name": "convert-documents-to-markdown",
+      "folder_name": "convert-documents-to-markdown",
+      "category": "Documents, browser, and planning",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Convert Office documents, ebooks, spreadsheets, and PDFs into Markdown with the anydoc CLI.",
+      "when_to_use": "Convert Office documents, ebooks, spreadsheets, and PDFs into Markdown with the anydoc CLI.",
+      "example_prompts": [
+        "Use $convert-documents-to-markdown to convert report.docx into Markdown."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Public skill definition",
+          "url": "https://github.com/firecrawl/anydoc/blob/main/skills/convert-documents-to-markdown/SKILL.md",
+          "verification": "opened_public_manifest_with_matching_workflow",
+          "evidence": "Public manifest name, author, runtime, and workflow match the installed entry; byte equality not tested."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the skill package; Node.js 20 or later is required by its anydoc CLI workflow.",
+        "command": "Use $skill-installer to install convert-documents-to-markdown from firecrawl/anydoc at skills/convert-documents-to-markdown."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/convert-documents-to-markdown/SKILL.md",
+          "sha256": "04cc0f3587ec792c83e4af942f88594205f360cddd540a3d869e28c58292bc6a",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/convert-documents-to-markdown/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Node.js / npm",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/convert-documents-to-markdown/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {},
+      "license": "MIT",
+      "notes": [],
+      "catalog_path": "catalog/personal--convert-documents-to-markdown.md"
+    },
+    {
+      "id": "personal--grill-me",
+      "name": "grill-me",
+      "folder_name": "grill-me",
+      "category": "Documents, browser, and planning",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Explicit invocation alias that delegates a plan or design interview to grilling.",
+      "when_to_use": "Explicit invocation alias that delegates a plan or design interview to grilling.",
+      "example_prompts": [
+        "Use $grill-me to challenge my plan for a research project."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Public skill definition",
+          "url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grill-me/SKILL.md",
+          "verification": "opened_public_manifest_with_matching_workflow",
+          "evidence": "Public manifest name and workflow match the installed instructions; byte equality not tested."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the complete selected skill directory. The grill-me alias also needs grilling.",
+        "command": "Use $skill-installer to install grill-me and grilling from mattpocock/skills at skills/productivity/grill-me and skills/productivity/grilling."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/grill-me/SKILL.md",
+          "sha256": "caaf8b8de1684f96e26b28f3c29189db5c89cce4b73e1c93d86164f66ef88637",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "grilling"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "Explicit-use alias for grilling; automatic model invocation is disabled in its manifest."
+      ],
+      "catalog_path": "catalog/personal--grill-me.md"
+    },
+    {
+      "id": "personal--grilling",
+      "name": "grilling",
+      "folder_name": "grilling",
+      "category": "Documents, browser, and planning",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Stress-test a plan, decision, or idea through structured rounds of questions.",
+      "when_to_use": "Stress-test a plan, decision, or idea through structured rounds of questions.",
+      "example_prompts": [
+        "Use $grilling to stress-test my plan before implementation."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Public skill definition",
+          "url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md",
+          "verification": "opened_public_manifest_with_matching_workflow",
+          "evidence": "Public manifest name and workflow match the installed instructions; byte equality not tested."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the complete selected skill directory. The grill-me alias also needs grilling.",
+        "command": "Use $skill-installer to install grilling from mattpocock/skills at skills/productivity/grilling."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/grilling/SKILL.md",
+          "sha256": "befdff1e27a1dfe2a294d5871169ac1afe16d983911daa4f32627514a48c1e15",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "agents": 1
+      },
+      "license": null,
+      "notes": [],
+      "catalog_path": "catalog/personal--grilling.md"
+    },
+    {
+      "id": "personal--pdf",
+      "name": "pdf",
+      "folder_name": "pdf",
+      "category": "Documents, browser, and planning",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Read, create, render, and visually verify PDF documents.",
+      "when_to_use": "Read, create, render, and visually verify PDF documents.",
+      "example_prompts": [
+        "Use $pdf to render this document and check its layout."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Public skill package",
+          "url": "https://github.com/openai/skills/tree/main/skills/.curated/pdf",
+          "verification": "opened_public_page_and_local_vendor_manifest_match",
+          "evidence": "Installed SKILL.md exactly matches the local openai/skills vendor checkout; supporting files not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Ask the Codex skill installer to install this public package. The current upstream version may differ from the snapshot.",
+        "command": "Use $skill-installer to install the pdf skill from openai/skills at skills/.curated/pdf."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/pdf/SKILL.md",
+          "sha256": "d108cf2b36355ab37eb5962933f4d09785ec002f3105c506129320209306b9d2",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/pdf/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Poppler",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/pdf/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "uv",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/pdf/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "assets": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [],
+      "catalog_path": "catalog/personal--pdf.md"
+    },
+    {
+      "id": "personal--playwright",
+      "name": "playwright",
+      "folder_name": "playwright",
+      "category": "Documents, browser, and planning",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Automate browser navigation, forms, screenshots, and UI inspection through Playwright CLI.",
+      "when_to_use": "Automate browser navigation, forms, screenshots, and UI inspection through Playwright CLI.",
+      "example_prompts": [
+        "Use $playwright to inspect this website and capture the checkout flow."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Public skill package",
+          "url": "https://github.com/openai/skills/tree/main/skills/.curated/playwright",
+          "verification": "opened_public_page_and_local_vendor_manifest_match",
+          "evidence": "Installed SKILL.md exactly matches the local openai/skills vendor checkout; supporting files not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Ask the Codex skill installer to install this public package. The current upstream version may differ from the snapshot.",
+        "command": "Use $skill-installer to install the playwright skill from openai/skills at skills/.curated/playwright."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/playwright/SKILL.md",
+          "sha256": "0ffaabcc8e0990627c4725f18bf1c7955534a796c1c199e872909de2013ce6a8",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Node.js / npm",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/playwright/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Browser session / browser automation tools",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/playwright/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 2,
+        "scripts": 1,
+        "assets": 2,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [],
+      "catalog_path": "catalog/personal--playwright.md"
+    },
+    {
+      "id": "personal--vera-niw-assemble",
+      "name": "vera-niw-assemble",
+      "folder_name": "vera-niw-assemble",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Assemble completed NIW evaluation, endeavor, pillar, and citation outputs into a Word petition draft.",
+      "when_to_use": "Assemble completed NIW evaluation, endeavor, pillar, and citation outputs into a Word petition draft.",
+      "example_prompts": [
+        "Use $vera-niw-assemble to combine these completed NIW outputs into a Word petition draft."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-assemble.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-assemble/SKILL.md",
+          "sha256": "3ced750e07ec31109e0f92324987a5102d008952db1154c79fc0b9c49d93b11d",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "LibreOffice",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/vera-niw-assemble/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "vera-niw-endeavor",
+        "vera-niw-evaluate",
+        "vera-niw-pillar"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 10
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-assemble.md"
+    },
+    {
+      "id": "personal--vera-niw-endeavor",
+      "name": "vera-niw-endeavor",
+      "folder_name": "vera-niw-endeavor",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Define an NIW proposed endeavor and three supporting pillars.",
+      "when_to_use": "Define an NIW proposed endeavor and three supporting pillars.",
+      "example_prompts": [
+        "Use $vera-niw-endeavor to refine my proposed endeavor and define three pillars."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-endeavor.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-endeavor/SKILL.md",
+          "sha256": "cd3ced7343c5768d5beadacb168aa2dc26274516825c01146c520437de2840bd",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 8
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-endeavor.md"
+    },
+    {
+      "id": "personal--vera-niw-entrepreneur",
+      "name": "vera-niw-entrepreneur",
+      "folder_name": "vera-niw-entrepreneur",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Evaluate founder-specific NIW evidence and organize an entrepreneur endeavor.",
+      "when_to_use": "Evaluate founder-specific NIW evidence and organize an entrepreneur endeavor.",
+      "example_prompts": [
+        "Use $vera-niw-entrepreneur to organize the evidence for my founder-based NIW case."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-entrepreneur.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-entrepreneur/SKILL.md",
+          "sha256": "00085605ebe97296b972912e67db64032fdab4a77349ceea21f3517ffe784f4f",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 7
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-entrepreneur.md"
+    },
+    {
+      "id": "personal--vera-niw-evaluate",
+      "name": "vera-niw-evaluate",
+      "folder_name": "vera-niw-evaluate",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Evaluate an NIW applicant profile and produce a structured strengths-and-gaps assessment.",
+      "when_to_use": "Evaluate an NIW applicant profile and produce a structured strengths-and-gaps assessment.",
+      "example_prompts": [
+        "Use $vera-niw-evaluate to assess this CV and identify evidence gaps."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-evaluate.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-evaluate/SKILL.md",
+          "sha256": "4fc93b11b2466e551f687d7648b3e7b921cbc82900093d391307238d222899a4",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 8
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-evaluate.md"
+    },
+    {
+      "id": "personal--vera-niw-pillar",
+      "name": "vera-niw-pillar",
+      "folder_name": "vera-niw-pillar",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft arguments and a future plan for one NIW pillar using the defined endeavor and evidence.",
+      "when_to_use": "Draft arguments and a future plan for one NIW pillar using the defined endeavor and evidence.",
+      "example_prompts": [
+        "Use $vera-niw-pillar to draft pillar one using this endeavor, all three pillar definitions, and supporting evidence."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-pillar.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-pillar/SKILL.md",
+          "sha256": "eed79b58a7be10467701922ff6257251d13f3b5c8baab740321f09adedfb788f",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "vera-niw-endeavor"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 7
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-pillar.md"
+    },
+    {
+      "id": "personal--vera-niw-pl-review",
+      "name": "vera-niw-pl-review",
+      "folder_name": "vera-niw-pl-review",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Review NIW petitions and recommendation letters for evidentiary weaknesses and RFE risks.",
+      "when_to_use": "Review NIW petitions and recommendation letters for evidentiary weaknesses and RFE risks.",
+      "example_prompts": [
+        "Use $vera-niw-pl-review to identify RFE risks in this petition draft."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-pl-review.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-pl-review/SKILL.md",
+          "sha256": "d0ecbcc756c98a1def6ccfb75f439ded8a6b2c19fed31c69aaf0fd73c5b61191",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 10
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-pl-review.md"
+    },
+    {
+      "id": "personal--vera-niw-recommendation",
+      "name": "vera-niw-recommendation",
+      "folder_name": "vera-niw-recommendation",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft an NIW recommendation letter grounded in the recommender relationship and supporting evidence.",
+      "when_to_use": "Draft an NIW recommendation letter grounded in the recommender relationship and supporting evidence.",
+      "example_prompts": [
+        "Use $vera-niw-recommendation to draft a letter from this recommender using the supplied evidence."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-recommendation.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-recommendation/SKILL.md",
+          "sha256": "ccc3f5aa728a999617634c5640eb4957bac72085145da4bc4a42831e5c78bd34",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 9
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-recommendation.md"
+    },
+    {
+      "id": "personal--vera-niw-rfe-response",
+      "name": "vera-niw-rfe-response",
+      "folder_name": "vera-niw-rfe-response",
+      "category": "NIW workflows",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft an evidence-based, point-by-point response to an NIW request for evidence.",
+      "when_to_use": "Draft an evidence-based, point-by-point response to an NIW request for evidence.",
+      "example_prompts": [
+        "Use $vera-niw-rfe-response to map this RFE notice to a point-by-point response using the petition and exhibits."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "NIW suite repository and installation guide",
+          "url": "https://github.com/VeraSuperHub/vera-eb-suite",
+          "verification": "opened_public_page_listing_matching_skill",
+          "evidence": "Upstream README lists this skill and the .skill archive distribution; installed-file equivalence is unverified."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_archive",
+        "instructions": "Download vera-niw-rfe-response.skill from the repository’s vera-niw-skillset directory; extract its complete folder into ~/.codex/skills/.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/vera-niw-rfe-response/SKILL.md",
+          "sha256": "344d9ec4bd7484eb1a5b0e900c43bcd36622c34833bfdd685b890d579f69d7ed",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 12
+      },
+      "license": null,
+      "notes": [
+        "Public suite identified by its skill inventory; current upstream behavior may differ from the installed version."
+      ],
+      "catalog_path": "catalog/personal--vera-niw-rfe-response.md"
+    },
+    {
+      "id": "personal--academic-research-suite",
+      "name": "academic-research-suite",
+      "folder_name": "academic-research-suite",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Plan research, review literature, draft papers, simulate peer review, and plan experiments through the ARS router.",
+      "when_to_use": "Plan research, review literature, draft papers, simulate peer review, and plan experiments through the ARS router.",
+      "example_prompts": [
+        "Use $academic-research-suite: ars-plan a study of reproducibility in scientific machine learning."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "academic-research-skills (upstream)",
+          "url": "https://github.com/Imbad0202/academic-research-skills",
+          "verification": "opened_public_page",
+          "commit": "828ef3b613b0e8b91830da3328a1e33d4eb5ab4c",
+          "evidence": "Local manifest.json source_repositories"
+        },
+        {
+          "label": "experiment-agent (upstream)",
+          "url": "https://github.com/Imbad0202/experiment-agent",
+          "verification": "opened_public_page",
+          "commit": "9b063fa895eaf1f63ac99ac03f924f8d31aa8d26",
+          "evidence": "Local manifest.json source_repositories"
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "custom_adapter_restore",
+        "instructions": "Upstream sources are verified, but this installed package is a custom Codex adapter. Restore the complete local academic-research-suite/ directory to reproduce the adapter. For the upstream Claude Code edition, follow the upstream README installation instructions; it is not an identical Codex package.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/academic-research-suite/SKILL.md",
+          "sha256": "cbd0039781d86992e06c1863f3e03a6de3cb98d46bfdb600b4810683fa0238fd",
+          "version": "0.1.22",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/academic-research-suite/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [
+        {
+          "name": "academic-paper",
+          "kind": "bundled_workflow",
+          "path": "ars/academic-paper/WORKFLOW.md",
+          "invocation": "Use $academic-research-suite and describe the task."
+        },
+        {
+          "name": "academic-paper-reviewer",
+          "kind": "bundled_workflow",
+          "path": "ars/academic-paper-reviewer/WORKFLOW.md",
+          "invocation": "Use $academic-research-suite and describe the task."
+        },
+        {
+          "name": "academic-pipeline",
+          "kind": "bundled_workflow",
+          "path": "ars/academic-pipeline/WORKFLOW.md",
+          "invocation": "Use $academic-research-suite and describe the task."
+        },
+        {
+          "name": "deep-research",
+          "kind": "bundled_workflow",
+          "path": "ars/deep-research/WORKFLOW.md",
+          "invocation": "Use $academic-research-suite and describe the task."
+        },
+        {
+          "name": "experiment-agent",
+          "kind": "bundled_workflow",
+          "path": "ars/experiment-agent/WORKFLOW.md",
+          "invocation": "Use $academic-research-suite and describe the task."
+        },
+        {
+          "name": "ars-3w",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-3w.md",
+          "invocation": "Use $academic-research-suite: ars-3w …",
+          "description": "ars-3w"
+        },
+        {
+          "name": "ars-abstract",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-abstract.md",
+          "invocation": "Use $academic-research-suite: ars-abstract …",
+          "description": "ars-abstract"
+        },
+        {
+          "name": "ars-cache-invalidate",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-cache-invalidate.md",
+          "invocation": "Use $academic-research-suite: ars-cache-invalidate …",
+          "description": "ars-cache-invalidate"
+        },
+        {
+          "name": "ars-citation-check",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-citation-check.md",
+          "invocation": "Use $academic-research-suite: ars-citation-check …",
+          "description": "ars-citation-check"
+        },
+        {
+          "name": "ars-disclosure",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-disclosure.md",
+          "invocation": "Use $academic-research-suite: ars-disclosure …",
+          "description": "ars-disclosure"
+        },
+        {
+          "name": "ars-format-convert",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-format-convert.md",
+          "invocation": "Use $academic-research-suite: ars-format-convert …",
+          "description": "ars-format-convert"
+        },
+        {
+          "name": "ars-full",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-full.md",
+          "invocation": "Use $academic-research-suite: ars-full …",
+          "description": "ars-full"
+        },
+        {
+          "name": "ars-lit-review",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-lit-review.md",
+          "invocation": "Use $academic-research-suite: ars-lit-review …",
+          "description": "ars-lit-review"
+        },
+        {
+          "name": "ars-mark-read",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-mark-read.md",
+          "invocation": "Use $academic-research-suite: ars-mark-read …",
+          "description": "ars-mark-read"
+        },
+        {
+          "name": "ars-outline",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-outline.md",
+          "invocation": "Use $academic-research-suite: ars-outline …",
+          "description": "ars-outline"
+        },
+        {
+          "name": "ars-plan",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-plan.md",
+          "invocation": "Use $academic-research-suite: ars-plan …",
+          "description": "ars-plan"
+        },
+        {
+          "name": "ars-rebuttal-audit",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-rebuttal-audit.md",
+          "invocation": "Use $academic-research-suite: ars-rebuttal-audit …",
+          "description": "ars-rebuttal-audit"
+        },
+        {
+          "name": "ars-reviewer",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-reviewer.md",
+          "invocation": "Use $academic-research-suite: ars-reviewer …",
+          "description": "ars-reviewer"
+        },
+        {
+          "name": "ars-revision-coach",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-revision-coach.md",
+          "invocation": "Use $academic-research-suite: ars-revision-coach …",
+          "description": "ars-revision-coach"
+        },
+        {
+          "name": "ars-revision",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-revision.md",
+          "invocation": "Use $academic-research-suite: ars-revision …",
+          "description": "ars-revision"
+        },
+        {
+          "name": "ars-unmark-read",
+          "kind": "command_alias",
+          "path": "ars/commands/ars-unmark-read.md",
+          "invocation": "Use $academic-research-suite: ars-unmark-read …",
+          "description": "ars-unmark-read"
+        }
+      ],
+      "supporting_resource_counts": {
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "ARS aliases are interpreted by the Codex router; they are not native Codex slash commands. Bundled agent prompts are supporting resources, not separately installed skills."
+      ],
+      "catalog_path": "catalog/personal--academic-research-suite.md"
+    },
+    {
+      "id": "personal--nature-academic-search",
+      "name": "nature-academic-search",
+      "folder_name": "nature-academic-search",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Search scholarly databases, verify citations, manage reference files, and audit independent citations.",
+      "when_to_use": "Search scholarly databases, verify citations, manage reference files, and audit independent citations.",
+      "example_prompts": [
+        "Use $nature-academic-search to find papers on reproducible single-cell analysis and export verified references."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-academic-search and nature-shared from Yuan1z0825/nature-skills at skills/nature-academic-search and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-academic-search/SKILL.md",
+          "sha256": "65f44bb5d31f8b2d26687dcdcbc22d3def3ab2b5a26c810cd5e18a6a98d5e681",
+          "version": "2.0.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-academic-search/static/core/routing-and-ops.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "MCP tools / connected services",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-academic-search/SKILL.md",
+            "~/.codex/skills/nature-academic-search/README_EN.md",
+            "~/.codex/skills/nature-academic-search/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "External API access (workflow dependent)",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-academic-search/README.md",
+            "~/.codex/skills/nature-academic-search/static/core/routing-and-ops.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "uv",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-academic-search/static/core/routing-and-ops.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "multi-source-search",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf1-multi-source-search.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "citation-verification",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf2-citation-verification.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "mesh-strategy",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf3-mesh-strategy.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "citation-file-mgmt",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf4-citation-file-mgmt.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "reference-mgmt",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf5-reference-mgmt.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "strict-other-citation-impact-audit",
+          "kind": "workflow_variant",
+          "group": "workflow",
+          "path": "references/workflows/wf6-strict-other-citation-impact-audit.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 14,
+        "scripts": 4,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-academic-search.md"
+    },
+    {
+      "id": "personal--nature-citation",
+      "name": "nature-citation",
+      "folder_name": "nature-citation",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Find Nature, Science, and Cell family references supporting individual manuscript claims.",
+      "when_to_use": "Find Nature, Science, and Cell family references supporting individual manuscript claims.",
+      "example_prompts": [
+        "Use $nature-citation to find supporting references for these introduction claims."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-citation and nature-shared from Yuan1z0825/nature-skills at skills/nature-citation and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-citation/SKILL.md",
+          "sha256": "ada5720816a45e85d3b8c96eedf04255b814cf8bbc6f177d1f12639a2409ed85",
+          "version": "2.1.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-citation/static/core/workflow.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 4,
+        "scripts": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-citation.md"
+    },
+    {
+      "id": "personal--nature-data",
+      "name": "nature-data",
+      "folder_name": "nature-data",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft and audit data availability statements, repository plans, dataset citations, and FAIR metadata.",
+      "when_to_use": "Draft and audit data availability statements, repository plans, dataset citations, and FAIR metadata.",
+      "example_prompts": [
+        "Use $nature-data to draft a data availability statement from these repository details."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-data and nature-shared from Yuan1z0825/nature-skills at skills/nature-data and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-data/SKILL.md",
+          "sha256": "f452776cf4b7620d753a1bb49b2b999bdb807de83fd03fbf1f3a32be70b459ed",
+          "version": "2.2.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 7,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-data.md"
+    },
+    {
+      "id": "personal--nature-downloader",
+      "name": "nature-downloader",
+      "folder_name": "nature-downloader",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Retrieve academic full text and supplementary information through authorized publisher, open-access, or institutional routes.",
+      "when_to_use": "Retrieve academic full text and supplementary information through authorized publisher, open-access, or institutional routes.",
+      "example_prompts": [
+        "Use $nature-downloader to retrieve authorized full text for these DOIs, without supplementary information."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-downloader from Yuan1z0825/nature-skills at skills/nature-downloader. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-downloader/SKILL.md",
+          "sha256": "0351f9069e77a4b027893592d295f3c511301bc7d2ec7d299ab49ee2c106be54",
+          "version": "2.1.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-downloader/SKILL.md",
+            "~/.codex/skills/nature-downloader/README_EN.md",
+            "~/.codex/skills/nature-downloader/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Node.js / npm",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-downloader/SKILL.md",
+            "~/.codex/skills/nature-downloader/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Browser session / browser automation tools",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-downloader/SKILL.md",
+            "~/.codex/skills/nature-downloader/README_EN.md",
+            "~/.codex/skills/nature-downloader/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "External API access (workflow dependent)",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-downloader/SKILL.md",
+            "~/.codex/skills/nature-downloader/README_EN.md",
+            "~/.codex/skills/nature-downloader/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 2,
+        "scripts": 25,
+        "assets": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-downloader.md"
+    },
+    {
+      "id": "personal--nature-experiment-log",
+      "name": "nature-experiment-log",
+      "folder_name": "nature-experiment-log",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Turn experiment images, voice notes, and observations into structured Markdown laboratory logs.",
+      "when_to_use": "Turn experiment images, voice notes, and observations into structured Markdown laboratory logs.",
+      "example_prompts": [
+        "Use $nature-experiment-log to organize these photos and notes into an experiment log."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-experiment-log from Yuan1z0825/nature-skills at skills/nature-experiment-log. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-experiment-log/SKILL.md",
+          "sha256": "1f7fffcbc950d4f60fcb5ad9f2aabe82246ebbd83bf29621a0e90c9ff4ec4b8b",
+          "version": "1.0.2",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Feishu integration (optional)",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-experiment-log/SKILL.md",
+            "~/.codex/skills/nature-experiment-log/README_EN.md",
+            "~/.codex/skills/nature-experiment-log/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "Obsidian integration (optional)",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-experiment-log/SKILL.md",
+            "~/.codex/skills/nature-experiment-log/README_EN.md",
+            "~/.codex/skills/nature-experiment-log/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 3,
+        "templates": 3,
+        "agents": 1
+      },
+      "license": "MIT",
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-experiment-log.md"
+    },
+    {
+      "id": "personal--nature-figure",
+      "name": "nature-figure",
+      "folder_name": "nature-figure",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Create and audit scientific plots, manuscript figures, and graphical abstract drafts.",
+      "when_to_use": "Create and audit scientific plots, manuscript figures, and graphical abstract drafts.",
+      "example_prompts": [
+        "Use $nature-figure with Python to create a publication-ready figure from results.csv."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-figure and nature-shared from Yuan1z0825/nature-skills at skills/nature-figure and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-figure/SKILL.md",
+          "sha256": "4e159bb7284cff2c10a1ac2c74f605f8d526f5c819b25c4d1aecf01ba2367d44",
+          "version": "2.6.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-figure/SKILL.md",
+            "~/.codex/skills/nature-figure/README_EN.md",
+            "~/.codex/skills/nature-figure/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "R plotting runtime",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-figure/SKILL.md",
+            "~/.codex/skills/nature-figure/static/core/stance.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "python",
+          "kind": "workflow_variant",
+          "group": "backend",
+          "path": "static/fragments/backend/python.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "r",
+          "kind": "workflow_variant",
+          "group": "backend",
+          "path": "static/fragments/backend/r.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "graphical_abstract_workflow",
+          "kind": "workflow_route",
+          "path": "references/ai-graphical-abstract-workflow.md",
+          "invocation": "Request this workflow through the parent skill."
+        },
+        {
+          "name": "openrouter_image_generation",
+          "kind": "workflow_route",
+          "path": "references/openrouter-image-generation.md",
+          "invocation": "Request this workflow through the parent skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 19,
+        "scripts": 6,
+        "assets": 85,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-figure.md"
+    },
+    {
+      "id": "personal--nature-image2ppt",
+      "name": "nature-image2ppt",
+      "folder_name": "nature-image2ppt",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Reconstruct slide images, screenshots, and scanned slides as editable PowerPoint objects.",
+      "when_to_use": "Reconstruct slide images, screenshots, and scanned slides as editable PowerPoint objects.",
+      "example_prompts": [
+        "Use $nature-image2ppt to turn these slide screenshots into an editable PowerPoint."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-image2ppt from Yuan1z0825/nature-skills at skills/nature-image2ppt. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-image2ppt/SKILL.md",
+          "sha256": "297d86de2c51fd92361a2e0f332841d1e1d9ff184693e937b6e027d95eb291df",
+          "version": "1.1.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-image2ppt/SKILL.md",
+            "~/.codex/skills/nature-image2ppt/README_EN.md",
+            "~/.codex/skills/nature-image2ppt/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "LibreOffice",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-image2ppt/README_EN.md",
+            "~/.codex/skills/nature-image2ppt/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 11,
+        "scripts": 9,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-image2ppt.md"
+    },
+    {
+      "id": "personal--nature-literature-pipeline",
+      "name": "nature-literature-pipeline",
+      "folder_name": "nature-literature-pipeline",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Run literature discovery, scoring, reading, delivery, and archival workflows.",
+      "when_to_use": "Run literature discovery, scoring, reading, delivery, and archival workflows.",
+      "example_prompts": [
+        "Use $nature-literature-pipeline to discover and rank recent papers on my research topic."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-literature-pipeline from Yuan1z0825/nature-skills at skills/nature-literature-pipeline. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-literature-pipeline/SKILL.md",
+          "sha256": "1dcaa692457ec9c2be409cb7777f834a2db833788b2e9b680baf0e961126b01a",
+          "version": "1.0.1",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 6,
+        "templates": 1,
+        "agents": 1
+      },
+      "license": "MIT",
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-literature-pipeline.md"
+    },
+    {
+      "id": "personal--nature-paper-card",
+      "name": "nature-paper-card",
+      "folder_name": "nature-paper-card",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Create a structured 16-section deep-reading card for one scientific paper.",
+      "when_to_use": "Create a structured 16-section deep-reading card for one scientific paper.",
+      "example_prompts": [
+        "Use $nature-paper-card to create a 16-section paper card for this PDF."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-paper-card and nature-shared from Yuan1z0825/nature-skills at skills/nature-paper-card and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-paper-card/SKILL.md",
+          "sha256": "9f0bc1412059805ae9fee9152d591ca22d59311db99f18c92381722555630d2f",
+          "version": "1.2.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-paper-card/SKILL.md",
+            "~/.codex/skills/nature-paper-card/README_EN.md",
+            "~/.codex/skills/nature-paper-card/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "methods",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/methods.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "discovery",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/discovery.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "resource",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/resource.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "clinical",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/clinical.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "materials",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/materials.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "review",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/review.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 3,
+        "scripts": 2,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-paper-card.md"
+    },
+    {
+      "id": "personal--nature-paper-to-patent",
+      "name": "nature-paper-to-patent",
+      "folder_name": "nature-paper-to-patent",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Develop evidence-grounded Chinese patent disclosures and invention drafts from research materials.",
+      "when_to_use": "Develop evidence-grounded Chinese patent disclosures and invention drafts from research materials.",
+      "example_prompts": [
+        "Use $nature-paper-to-patent to prepare a Chinese technical disclosure from these research materials."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-paper-to-patent from Yuan1z0825/nature-skills at skills/nature-paper-to-patent. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-paper-to-patent/SKILL.md",
+          "sha256": "1a57ae613bb545debba02ce4d9d36a53974e717cdafb1a5feb2cbd341bcf36b0",
+          "version": "1.0.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-paper-to-patent/SKILL.md",
+            "~/.codex/skills/nature-paper-to-patent/README_EN.md",
+            "~/.codex/skills/nature-paper-to-patent/README.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [
+        {
+          "name": "pdf-text",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/pdf-text.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "scanned-pdf",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/scanned-pdf.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "pasted-text",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/pasted-text.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "mixed-project",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/mixed-project.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "full-draft",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/full-draft.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "claim-set",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/claim-set.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "disclosure-analysis",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/disclosure-analysis.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "technical-disclosure",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/technical-disclosure.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "disclosure-iteration",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/disclosure-iteration.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "paper-patent-audit",
+          "kind": "workflow_variant",
+          "group": "task_mode",
+          "path": "static/fragments/task/paper-patent-audit.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "algorithm-software",
+          "kind": "workflow_variant",
+          "group": "invention_type",
+          "path": "static/fragments/invention/algorithm-software.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "apparatus-system",
+          "kind": "workflow_variant",
+          "group": "invention_type",
+          "path": "static/fragments/invention/apparatus-system.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "process-material",
+          "kind": "workflow_variant",
+          "group": "invention_type",
+          "path": "static/fragments/invention/process-material.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "mixed",
+          "kind": "workflow_variant",
+          "group": "invention_type",
+          "path": "static/fragments/invention/mixed.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 18,
+        "scripts": 20,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-paper-to-patent.md"
+    },
+    {
+      "id": "personal--nature-paper2ppt",
+      "name": "nature-paper2ppt",
+      "folder_name": "nature-paper2ppt",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Build a Chinese scientific presentation from a paper, with figures, speaker notes, and layout checks.",
+      "when_to_use": "Build a Chinese scientific presentation from a paper, with figures, speaker notes, and layout checks.",
+      "example_prompts": [
+        "Use $nature-paper2ppt to turn this paper into a Chinese journal-club presentation."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-paper2ppt and nature-shared from Yuan1z0825/nature-skills at skills/nature-paper2ppt and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-paper2ppt/SKILL.md",
+          "sha256": "945136f112001f3584360956a3dc8c98575bc426b7252e2fd0ccc4abc30e77a8",
+          "version": "2.0.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-paper2ppt/SKILL.md",
+            "~/.codex/skills/nature-paper2ppt/static/core/toolchain.md",
+            "~/.codex/skills/nature-paper2ppt/static/core/workflow.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "LibreOffice",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-paper2ppt/static/core/toolchain.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "discovery",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/discovery.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "methods",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/methods.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "resource",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/resource.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "clinical",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/clinical.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "materials",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/materials.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "review",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/review.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 3,
+        "scripts": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-paper2ppt.md"
+    },
+    {
+      "id": "personal--nature-polishing",
+      "name": "nature-polishing",
+      "folder_name": "nature-polishing",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Polish, translate, restructure, or typeset academic prose while preserving evidence boundaries.",
+      "when_to_use": "Polish, translate, restructure, or typeset academic prose while preserving evidence boundaries.",
+      "example_prompts": [
+        "Use $nature-polishing to shorten this Results section while preserving the evidence."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-polishing and nature-shared from Yuan1z0825/nature-skills at skills/nature-polishing and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-polishing/SKILL.md",
+          "sha256": "7a23b3173f43d3829f1dc4032a2ebad047a6728932429d8e963be1e5222b3b5f",
+          "version": "6.5.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "research",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/research.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "methods",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/methods.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "hypothesis",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/hypothesis.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "algorithmic",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/algorithmic.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "review",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/review.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "abstract",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/abstract.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "intro",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/intro.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "results",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/results.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "discussion",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/discussion.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "conclusion",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/conclusion.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "title",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/title.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "methods",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/methods.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "en",
+          "kind": "workflow_variant",
+          "group": "language",
+          "path": "static/fragments/language/en.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "zh-to-en",
+          "kind": "workflow_variant",
+          "group": "language",
+          "path": "static/fragments/language/zh-to-en.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nature",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nature.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nat-comms",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nat-comms.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nat-mach-intell",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nat-mach-intell.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "generic",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/generic.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 7,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-polishing.md"
+    },
+    {
+      "id": "personal--nature-reader",
+      "name": "nature-reader",
+      "folder_name": "nature-reader",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Create source-grounded Chinese-English full-paper readers with figures, tables, and equations.",
+      "when_to_use": "Create source-grounded Chinese-English full-paper readers with figures, tables, and equations.",
+      "example_prompts": [
+        "Use $nature-reader to create a full Chinese-English reader for this PDF."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-reader and nature-shared from Yuan1z0825/nature-skills at skills/nature-reader and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-reader/SKILL.md",
+          "sha256": "fb93710f348498f5e83aa4ef90761ee0fdc67cc0adc3c0aca7d3302074c6f71c",
+          "version": "2.1.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Python",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-reader/static/core/output-contract.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "pdf-text",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/pdf-text.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "scanned-pdf",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/scanned-pdf.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "html",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/html.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "doi-arxiv",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/doi-arxiv.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "pasted-text",
+          "kind": "workflow_variant",
+          "group": "source_format",
+          "path": "static/fragments/source/pasted-text.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 5,
+        "scripts": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-reader.md"
+    },
+    {
+      "id": "personal--nature-ref-verifier",
+      "name": "nature-ref-verifier",
+      "folder_name": "nature-ref-verifier",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Cross-check reference metadata and report incorrect authors, titles, years, pages, and identifiers.",
+      "when_to_use": "Cross-check reference metadata and report incorrect authors, titles, years, pages, and identifiers.",
+      "example_prompts": [
+        "Use $nature-ref-verifier to check every reference in this bibliography."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-ref-verifier from Yuan1z0825/nature-skills at skills/nature-ref-verifier. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-ref-verifier/SKILL.md",
+          "sha256": "6a975074d7a1c62c00dd9e8c7367cd2af0ef9d573d6d6ce5ea12f70d9320a516",
+          "version": "1.0.1",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "MCP tools / connected services",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-ref-verifier/SKILL.md",
+            "~/.codex/skills/nature-ref-verifier/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        },
+        {
+          "name": "External API access (workflow dependent)",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-ref-verifier/SKILL.md",
+            "~/.codex/skills/nature-ref-verifier/SKILL.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-ref-verifier.md"
+    },
+    {
+      "id": "personal--nature-response",
+      "name": "nature-response",
+      "folder_name": "nature-response",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft and audit reviewer responses, revision cover letters, and marked manuscript changes.",
+      "when_to_use": "Draft and audit reviewer responses, revision cover letters, and marked manuscript changes.",
+      "example_prompts": [
+        "Use $nature-response to draft separate point-by-point responses to these reviewer reports."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-response and nature-shared from Yuan1z0825/nature-skills at skills/nature-response and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-response/SKILL.md",
+          "sha256": "909a819e1cb761a40cec67d77154f4e7d863073574f8a49f355280514529edd0",
+          "version": "1.7.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 11,
+        "scripts": 1,
+        "templates": 3,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-response.md"
+    },
+    {
+      "id": "personal--nature-reviewer",
+      "name": "nature-reviewer",
+      "folder_name": "nature-reviewer",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Simulate pre-submission peer review and identify major concerns, minor issues, and blocking defects.",
+      "when_to_use": "Simulate pre-submission peer review and identify major concerns, minor issues, and blocking defects.",
+      "example_prompts": [
+        "Use $nature-reviewer to assess the novelty and technical soundness of this manuscript."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-reviewer and nature-shared from Yuan1z0825/nature-skills at skills/nature-reviewer and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-reviewer/SKILL.md",
+          "sha256": "88aab215096a1883b56a36e087fa8c2f64b39087461f1e69dbfcf5700ae80c19",
+          "version": "1.4.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 9,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-reviewer.md"
+    },
+    {
+      "id": "personal--nature-shared",
+      "name": "nature-shared",
+      "folder_name": "nature-shared",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Provide shared reference material for other Nature skills; this is not a standalone workflow.",
+      "when_to_use": "Provide shared reference material for other Nature skills; this is not a standalone workflow.",
+      "example_prompts": [],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-shared from Yuan1z0825/nature-skills at skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-shared/SKILL.md",
+          "sha256": "1e60f9382471ccb6e29ee490acedfb3c0045077ac758dd86df7c726f7e216876",
+          "version": "1.5.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Node.js / npm",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-shared/README_EN.md"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "scripts": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "Support package only; load through a consuming Nature skill rather than invoking it as an independent task.",
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-shared.md"
+    },
+    {
+      "id": "personal--nature-statistics",
+      "name": "nature-statistics",
+      "folder_name": "nature-statistics",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Audit statistical reporting, study design transparency, uncertainty, replication, and figure legends.",
+      "when_to_use": "Audit statistical reporting, study design transparency, uncertainty, replication, and figure legends.",
+      "example_prompts": [
+        "Use $nature-statistics to audit the statistical methods and figure legends in this manuscript."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-statistics and nature-shared from Yuan1z0825/nature-skills at skills/nature-statistics and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-statistics/SKILL.md",
+          "sha256": "d2373a2eaff22c741d50e8b7f4886ec103d9393cae6087d07c97ee30f3e01ef8",
+          "version": "1.3.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 6,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-statistics.md"
+    },
+    {
+      "id": "personal--nature-writing",
+      "name": "nature-writing",
+      "folder_name": "nature-writing",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Draft manuscript sections and initial-submission materials from author-provided evidence.",
+      "when_to_use": "Draft manuscript sections and initial-submission materials from author-provided evidence.",
+      "example_prompts": [
+        "Use $nature-writing to draft an Introduction from these claims, references, and results."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-writing and nature-shared from Yuan1z0825/nature-skills at skills/nature-writing and skills/nature-shared. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-writing/SKILL.md",
+          "sha256": "8cb00fc8d0da1816a0fa9199e2d0424cc475da0bdb22dbafafd7fe82e6496933",
+          "version": "1.4.0",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [
+        "nature-shared"
+      ],
+      "subskills_and_commands": [
+        {
+          "name": "manuscript",
+          "kind": "workflow_variant",
+          "group": "task",
+          "path": "static/fragments/task/manuscript.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "submission-package",
+          "kind": "workflow_variant",
+          "group": "task",
+          "path": "static/fragments/task/submission-package.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "research",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/research.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "methods",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/methods.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "hypothesis",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/hypothesis.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "algorithmic",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/algorithmic.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "review",
+          "kind": "workflow_variant",
+          "group": "paper_type",
+          "path": "static/fragments/paper_type/review.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "abstract",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/abstract.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "intro",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/intro.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "related-work",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/related-work.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "method",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/method.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "experiments",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/experiments.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "discussion",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/discussion.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "conclusion",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/conclusion.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "title",
+          "kind": "workflow_variant",
+          "group": "section",
+          "path": "static/fragments/section/title.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "en",
+          "kind": "workflow_variant",
+          "group": "language",
+          "path": "static/fragments/language/en.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "zh-to-en",
+          "kind": "workflow_variant",
+          "group": "language",
+          "path": "static/fragments/language/zh-to-en.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nature",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nature.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nature-family",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nature-family.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nat-comms",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nat-comms.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "nat-mach-intell",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/nat-mach-intell.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        },
+        {
+          "name": "generic",
+          "kind": "workflow_variant",
+          "group": "journal",
+          "path": "static/fragments/journal/generic.md",
+          "invocation": "Select this variant through the parent skill; not a separately registered skill."
+        }
+      ],
+      "supporting_resource_counts": {
+        "references": 42,
+        "templates": 4,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--nature-writing.md"
+    },
+    {
+      "id": "personal--research-junshi",
+      "name": "research-junshi",
+      "folder_name": "research-junshi",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Advise research strategy using a researcher profile, recent literature, and ranked project ideas.",
+      "when_to_use": "Advise research strategy using a researcher profile, recent literature, and ranked project ideas.",
+      "example_prompts": [
+        "Use $research-junshi to suggest ranked research directions based on these papers and my current problem."
+      ],
+      "aliases": [],
+      "sources": [
+        {
+          "label": "Junshi upstream repository",
+          "url": "https://github.com/junshi-research/research-junshi",
+          "verification": "opened_public_repository_matching_package_identity",
+          "evidence": "Repository and local README share the package identity and research-strategy workflow. Current manifest differs from this installed copy."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "manual_package",
+        "instructions": "Download the upstream repository, then place its complete contents in ~/.codex/skills/research-junshi/. Review the upstream setup instructions; this local Codex adaptation differs from current upstream.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/research-junshi/SKILL.md",
+          "sha256": "28231da01835b6a3b10aea1ed48202ca24837364298b9f31b28c1e0908d4fe7b",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 1,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "Current upstream uses a revised shared memory layout and scripts. Restoring the original local folder is required to reproduce this exact older adaptation."
+      ],
+      "catalog_path": "catalog/personal--research-junshi.md"
+    },
+    {
+      "id": "personal--research-paper-writing",
+      "name": "research-paper-writing",
+      "folder_name": "research-paper-writing",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Improve ML, computer vision, and NLP manuscripts with clear structure and evidence-backed claims.",
+      "when_to_use": "Improve ML, computer vision, and NLP manuscripts with clear structure and evidence-backed claims.",
+      "example_prompts": [
+        "Use $research-paper-writing to improve this ML paper Introduction and check claim support."
+      ],
+      "aliases": [],
+      "sources": [],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "unknown_source",
+        "instructions": "No verified downloadable source was recovered. To reproduce this exact installation, transfer the complete research-paper-writing/ package from the original Mac to the target agent’s skills directory; this catalog does not contain the package.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/research-paper-writing/SKILL.md",
+          "sha256": "683cf047f3274482752ee02fea7e9ff12dc867eae9677e0292055ab65a3b0f71",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 37,
+        "agents": 1
+      },
+      "license": null,
+      "notes": [],
+      "catalog_path": "catalog/personal--research-paper-writing.md"
+    },
+    {
+      "id": "personal--researchwrite",
+      "name": "researchwrite",
+      "folder_name": "nature-proposal-writer",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Compose, revise, or audit research proposals through an evidence-first writing pipeline.",
+      "when_to_use": "Compose, revise, or audit research proposals through an evidence-first writing pipeline.",
+      "example_prompts": [
+        "Use $researchwrite to revise this proposal and audit its evidence chain."
+      ],
+      "aliases": [
+        "researchwrite"
+      ],
+      "sources": [
+        {
+          "label": "Nature collection at recorded installation commit",
+          "url": "https://github.com/Yuan1z0825/nature-skills/tree/745c5f38d1b4a0600bd2f5f5682e394a34fc28b2/skills",
+          "verification": "opened_public_tree_matching_local_receipt",
+          "commit": "745c5f38d1b4a0600bd2f5f5682e394a34fc28b2",
+          "evidence": "Public commit tree lists this package; local .nature-skills-install.txt records the same commit. Whole package contents were not compared."
+        }
+      ],
+      "documentation": [
+        {
+          "label": "Nature collection installation guide",
+          "url": "https://github.com/Yuan1z0825/nature-skills/blob/main/README_EN.md",
+          "verification": "opened_public_page"
+        },
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "skill_installer",
+        "instructions": "Install the selected complete package and its sibling support dependencies. Current upstream may differ from this local snapshot.",
+        "command": "Use $skill-installer to install nature-proposal-writer from Yuan1z0825/nature-skills at skills/nature-proposal-writer. Use ref 745c5f38d1b4a0600bd2f5f5682e394a34fc28b2 for the recorded snapshot, or main for the current upstream version."
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/nature-proposal-writer/SKILL.md",
+          "sha256": "aed7568f8e9fc99e7dad2d2257d2beadd47570b875071cadb29406f2c84a9c2c",
+          "version": "1.1.1",
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [
+        {
+          "name": "Node.js / npm",
+          "kind": "mentioned_in_instructions",
+          "evidence": [
+            "~/.codex/skills/nature-proposal-writer/manifest.yaml"
+          ],
+          "note": "Mentioned by package instructions; may apply only to selected workflows. Runtime availability was not tested."
+        }
+      ],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "references": 20,
+        "scripts": 1,
+        "templates": 8,
+        "agents": 1
+      },
+      "license": "MIT",
+      "notes": [
+        "The recorded installation commit was recovered in the public repository. Local files may have changed after installation; no whole-package equality claim is made."
+      ],
+      "catalog_path": "catalog/personal--researchwrite.md"
+    },
+    {
+      "id": "personal--zw-read",
+      "name": "zw-read",
+      "folder_name": "zw-read",
+      "category": "Research and academic writing",
+      "kind": "personal",
+      "app": "Codex",
+      "plugin": null,
+      "marketplace": null,
+      "status": "installed_manifest",
+      "summary": "Read a local scientific paper, request filename approval, and deliver a concise English report.",
+      "when_to_use": "Read a local scientific paper, request filename approval, and deliver a concise English report.",
+      "example_prompts": [
+        "Use $zw-read to read paper.pdf and prepare the English reading report."
+      ],
+      "aliases": [],
+      "sources": [],
+      "documentation": [
+        {
+          "label": "Codex skill documentation",
+          "url": "https://learn.chatgpt.com/docs/build-skills",
+          "verification": "opened_public_page"
+        }
+      ],
+      "installation": {
+        "method": "unknown_source",
+        "instructions": "No verified downloadable source was recovered. To reproduce this exact installation, transfer the complete zw-read/ package from the original Mac to the target agent’s skills directory; this catalog does not contain the package.",
+        "command": null
+      },
+      "installations": [
+        {
+          "path": "~/.codex/skills/zw-read/SKILL.md",
+          "sha256": "50b90698e35c242cfba4bc330d3bebd76226762c19404a177542f7ea40cee379",
+          "version": null,
+          "cache_version": null,
+          "status": "installed_manifest"
+        }
+      ],
+      "dependencies": [],
+      "related_skill_packages": [],
+      "subskills_and_commands": [],
+      "supporting_resource_counts": {
+        "agents": 1
+      },
+      "license": null,
+      "notes": [
+        "Explicit invocation only. The workflow asks for approval before renaming a paper."
+      ],
+      "catalog_path": "catalog/personal--zw-read.md"
+    }
+  ]
+}
